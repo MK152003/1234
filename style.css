@@ -1,0 +1,95 @@
+body{
+    background-color: aliceblue ;
+    padding: 20px;
+    font-family: Helvetica;
+}
+.fixed-top{
+    background-color: #99aaff;
+
+}
+h1{
+    font: arial;
+    font-size: xx-large;
+}
+h2{
+    font: arial;
+    font-size: small;
+}
+.container-fluid{
+    margin-top: 100px;
+    padding: 20px;
+}
+.logo {
+    max-width: 100px; /* Adjust the width as needed */
+    margin-right: 10px; /* Adjust the margin as needed */
+    padding: 5px;
+   
+}
+.btn{
+    background-color: #f99;
+}
+#logo {
+    max-width: 100%; /* Ensure the logo doesn't exceed its container */
+}
+
+
+h1 {
+    margin-bottom: 0; /* Remove default margin for h1 */
+}
+
+.col-6 {
+    text-align: right; /* Align content to the right in the rightmost column */
+}
+.modal .modal-dialog {
+    margin-top: 20vh;
+  }
+
+  nav {
+    padding: 10px;
+  }
+  iframe{
+    overflow: hidden;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+  }
+
+  nav ul li {
+    margin-right: 10px;
+  }
+
+  nav ul li:first-child {
+    margin-right: 5px;
+  }
+
+  nav ul li:last-child {
+    margin-left: auto; 
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .content {
+    padding: 20px;
+    padding-top: 70px; 
+  }
+
+  iframe {
+    border: none;
+    width: 100%;
+    height: calc(100vh - 50px);
+  }
+
+  h1 {
+    margin: 0;
+    padding: 10px;
+  }

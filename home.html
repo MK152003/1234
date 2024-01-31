@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Invoice</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <nav class="fixed-top">
+            <div class="container-alpha">
+                <div class="row">
+                    <div class="col-1">
+                        <image src="Logo.png" alt="Logo" id="logo" class="logo"></image>
+                    </div>
+                    <div class="col-4">
+                        <h1>VIYAGULA SECURITY SERVICES</h1>
+                        <p>15/456 NO.2, ANNAI KAMATCHI NAGAR MALAIPATTY ROAD, THOTTANATHU POST, DINDIGUL 624003, TAMIL NADU</p>
+                    </div>
+                </div>
+                    
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <h3>Invoice details</h3>
+            <form id="detailsForm" method="post" action="invoice.php">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label> Name:</label>
+                            <input type="text" name="=name" id="name" class="form-control" placeholder="Name" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label> Phone Number:</label>
+                            <input type="text" name="pno" id="pno" class="form-control" placeholder="Phone Number" >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label> Address:</label>
+                            <input type="text" name="=address" id="address" class="form-control" placeholder="Address" >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label> Date:</label>
+                            <input type="date" name="date" id="date" class="form-control" placeholder="Date" >
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                            <div class="form-group">
+                                <label> Due Date:</label>
+                                <input type="date" name="duedate" id="duedate" class="form-control" placeholder="Date" >
+                            </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label> Security Guard:</label>
+                            <input type="number" name="security" id="security" class="form-control" placeholder="Number of Security Guards">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label> Amount:</label>
+                            <input type="number" name="securityamt" id="securityamt" class="form-control" placeholder="Security Amount" >
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label> Company Security:</label>
+                            <input type="number" name="csecurity" id="csecurity" class="form-control" placeholder="Number of Company Security">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label> Amount:</label>
+                            <input type="number" name="csecurityamt" id="csecurityamt" class="form-control" placeholder="Company Security Amount" >
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label> Personal Security:</label>
+                            <input type="number" name="personalsecurity" id="personalsecurity" class="form-control" placeholder="Number of Personal Security">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label> Amount:</label>
+                            <input type="number" name="personalsecurityamt" id="personalsecurityamt" class="form-control" placeholder=" Personal Security Amount" >
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label> Private Security:</label>
+                            <input type="number" name="privatecsecurity" id="privatesecurity" class="form-control" placeholder="Number of Private Security">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label> Amount:</label>
+                            <input type="number" name="privatecsecurityamt" id="privatesecurityamt" class="form-control" placeholder="Private Security Amount" >
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label> Lady Security Guard:</label>
+                            <input type="number" name="lsecurity" id="lsecurity" class="form-control" placeholder="Number of Lady Security">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label> Amount:</label>
+                            <input type="number" name="lsecurityamt" id="lsecurityamt" class="form-control" placeholder=" Lady Security Amount" >
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label> GST</label>
+                            <input type="number" name="gst" id="gst" class="form-control" placeholder="GST">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label> Mode of Payment </label>
+                            <select name="mop" id="mop" class="form-control">
+                                <option>Cash</option>
+                                <option>Online</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <button type="submit" class="btn" style="width: auto; margin-top: 25px;">Generate Invoice</button>
+                        <button type="button" class="btn" id="clearBtn" style="width: auto; margin-top: 25px; margin-left: 10px;">Clear</button>
+                    </div>
+                </div>
+
+             </form>
+
+        </div>
+    </body>
+</html>
